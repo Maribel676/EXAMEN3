@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+
+    <title>Examen 3 UAB</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row align-items-stretch justify-content-between">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                    <a class="navbar-brand" href="#">FUNERARIA SHALOM</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <img src="img/cart.png" class="nav-link dropdown-toggle img-fluid" height="70px"
+                                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"></img>
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                    <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                                        Compra</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+            <h1 class="display-4 mt-4">ARMA TU PAQUETE</h1>
+            <p class="lead"></p>
+        </div>
+
+        <div class="container" id="lista-productos">
+            
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAJA CUADRADA COMBINADO</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/caja1.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">2100</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAJA CUADRADA MARMOLEADO</li>
+                            <li>COLOR MADERA BARNIZADO</li>
+                            <li>ESPECIAL</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="0">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAJA TREBOL COMBINADO</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/caja2.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">2200</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAJA TREBOL COMBINADO</li>
+                            <li>COLOR MARMOMALADO CAFE </li>
+                            <li>ESPECIAL</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAJA REDONDA COMBINADO</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/caja3.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">1000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAJA REDONDA COMBINADO</li>
+                            <li>COLOR MADERA BARNIZADO</li>
+                            <li>SENCILLA</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Añadir al carrito</a>
+                    </div>
+                </div>
+                
+            </div><div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAJA REDONDA CON ONDAS</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/caja4.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">1500</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAJA REDONDA</li>
+                            <li>COLOR BLANCO</li>
+                            <li>SEMI-ESPECIAL</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAJA PUNTA DIAMENTE</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/caja5.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">1300</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAJA PUNTA DIAMENTE</li>
+                            <li>COLOR MADERA BARNIZADO</li>
+                            <li>SEMI-ESPECIAL</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAJA REDONDA GOTAS</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/caja6.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">1000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAJA REDONDA</li>
+                            <li>COLOR MADERA BARNIZADO</li>
+                            <li>SENCILLA</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Añadir al carrito</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAJA CUADRADA BIBLIA</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/caja7.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">2000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAJA CUADRADA BIBLIA</li>
+                            <li>COLOR MADERA BARNIZADO</li>
+                            <li>ESPECIAL</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAJA REDONDA CON TALLADO</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/caja8.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">1400</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAJA REDONDA CON TALLADO</li>
+                            <li>COLOR MADERA BARNIZADO</li>
+                            <li>SEMI-ESPECIAL</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAJA REDONDA CON ONDAS</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/caja9.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">1000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAJA REDONDA</li>
+                            <li>COLOR MADERA BARNIZADO</li>
+                            <li>SENCILLA</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Añadir al carrito</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAJA TREBOL COLOR ENTERO</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/caja10.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">2100</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAJA TREBOL</li>
+                            <li>COLOR MORADO LAQUEADO</li>
+                            <li>ESPECIAL</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAJA DE DIEZ ESQUINAS</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/caja11.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">1500</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAJA DIEZ ESQUINAS</li>
+                            <li>COLOR BLANCO</li>
+                            <li>SEMI-ESPECIAL</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="10">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAJA CUADRADA DE UN SOLO COLOR</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/caja12.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">2000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAJA CUADRADA </li>
+                            <li>COLOR MORADO LAQUEADO</li>
+                            <li>ESPECIAL</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="11">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card-deck mb-3 text-center">
+                
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-bold">CAJA REDONDA ESPECIAL</h4>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/caja13.jpg" class="card-img-top">
+                            <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">2500</span></h1>
+    
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li></li>
+                                <li>CAJA REDONDA DOBLE TAPA</li>
+                                <li>COLOR MARA BARNIZADO</li>
+                                <li>SUPER ESPECIAL</li>
+                            </ul>
+                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="12">Añadir al carrito</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-bold">ADORNOS PARA FERETRO OPCION 1</h4>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/adorno1.jpg" class="card-img-top">
+                            <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">60</span></h1>
+    
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li></li>
+                                <li>ADORNO AGARRADORES</li>
+                                <li>COLOR DORADO/PLATEADO</li>
+                                <li>GENERICO</li>
+                            </ul>
+                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="13">Añadir al carrito</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-bold">ADORNOS PARA FERETRO OPCION 2</h4>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/adorno2.jpg" class="card-img-top">
+                            <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">60</span></h1>
+    
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li></li>
+                                <li>ADORNO AGARRADORES</li>
+                                <li>COLOR DORADO/PLATEADO</li>
+                                <li>GENERICO</li>
+                            </ul>
+                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="14">Añadir al carrito</a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="card-deck mb-3 text-center">
+                
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-bold">ADORNOS PARA FERETRO OPCION 3</h4>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/adorno3.jpg" class="card-img-top">
+                            <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">80</span></h1>
+    
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li></li>
+                                <li>ADORNO AGARRADORES</li>
+                                <li>COLOR DORADO/PLATEADO</li>
+                                <li>GENERICO</li>
+                            </ul>
+                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="15">Añadir al carrito</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-bold">CAPILLA ARDIENTE OPCION 1</h4>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/capilla1.jpg" class="card-img-top">
+                            <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">450</span></h1>
+    
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li></li>
+                                <li>CAPILLA ARDIENTE PLATEADO</li>
+                                <li>COLOR BLANCO</li>
+                                <li>SENCILLO</li>
+                            </ul>
+                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="16">Añadir al carrito</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-bold">CAPILLA ARDIENTE OPCION 2</h4>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/capilla2.jpg" class="card-img-top">
+                            <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">450</span></h1>
+    
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li></li>
+                                <li>CAPILLA ARDIENTE DORADO</li>
+                                <li>COLOR BLANCO</li>
+                                <li>SENCILLO</li>
+                            </ul>
+                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="17">Añadir al carrito</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAPILLA ARDIENTE OPCION 3</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/capilla3.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">500</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAPILLA ARDIENTE GUINDO</li>
+                            <li>COLOR LILA</li>
+                            <li>ESPECIAL</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="18">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAPILLA ARDIENTE OPCION 4</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/capilla4.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">480</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAPILLA ARDIENTE LILA</li>
+                            <li>COLOR LILA CLARO</li>
+                            <li>SEMI-ESPECIAL</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="19">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">DISEÑO DE CORTINA OPCION 1</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/cortina1.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">150</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CORTINA SENCILLA</li>
+                            <li>COLOR CREMA Y CAJE OSCURO</li>
+                            <li>SENCILLA</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="20">Añadir al carrito</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="card-deck mb-3 text-center">
+            
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">DISEÑO DE CORTINA OPCION 2</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/cortina2.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">200</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CORTINA SENCILLA</li>
+                            <li>COLOR BLANCO,CAJE Y MOSTAZA</li>
+                            <li>SEMI-ESPECIAL</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="21">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">DISEÑO DE CORTINA OPCION 3</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/cortina3.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">150</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CORTINA SENCILLA</li>
+                            <li>COLOR PERLA Y AZUL</li>
+                            <li>SENCILLA</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="22">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">TRAMITES EN GENERAL</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/tramites.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">Bs.-/ <span class="">500</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CERTIFICADO MEDICO </li>
+                            <li>CERTIFICADO DE DEFUNCION</li>
+                            <li>DEPOSITOS BANCARIOS</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="23">Añadir al carrito</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        </div>
+    </main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
+
+</body>
+
+</html>
